@@ -1,0 +1,32 @@
+---
+alwaysApply: true
+---
+# Nexus-Audit 项目规范
+
+## 语言
+- 代码: 英文变量名/函数名, 中文 docstring 和日志
+- 回复用户: 简体中文
+
+## 代码风格
+- Python 3.11+, 所有函数必须有类型注解
+- Agent 间数据传递用 Pydantic BaseModel
+- 配置集中在 config.py, 通过 python-dotenv 读取 .env
+- 日志用 rich.console.Console 输出
+
+## 项目结构
+- agents/ → 4 个核心 Agent (ingest/pattern/risk/alert)
+- graph/ → NetworkX 图分析
+- memory/ → 三层记忆系统
+- ui/ → Streamlit Dashboard
+- data/ → 数据集与预处理脚本
+
+## 提交规范
+- feat: 新功能
+- fix: 修复
+- docs: 文档
+- refactor: 重构
+
+## 任务完成后
+1. 运行 `python main.py` 验证管道
+2. 通过则提交, 失败则修复
+3. 更新 MEMORY.md (如涉及架构/依赖变更)

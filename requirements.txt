@@ -1,0 +1,21 @@
+# === LLM API ===
+openai>=1.30.0
+
+# === Data Processing ===
+pandas>=2.0.0
+numpy>=1.24.0
+openpyxl>=3.1.0
+
+# === Graph Analysis ===
+networkx>=2.8
+python-louvain>=0.16
+matplotlib>=3.7.0
+plotly>=5.18.0
+
+# === Demo UI ===
+streamlit>=1.30.0
+
+# === Utilities ===
+python-dotenv>=1.0.0
+rich>=13.7.0
+pydantic>=2.5.0

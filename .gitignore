@@ -1,0 +1,15 @@
+.env
+__pycache__/
+*.pyc
+*.pyo
+data/raw/
+data/processed/
+*.db
+.venv/
+venv/
+.idea/
+.vscode/
+*.egg-info/
+dist/
+build/
+memory/learned_rules.json
